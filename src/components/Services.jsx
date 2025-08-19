@@ -82,7 +82,7 @@ const SolutionsGridSection = styled.section`
 
 const GridContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 3rem;
   justify-items: center;
 `;
@@ -188,10 +188,10 @@ const SolutionsPage = () => {
       {/* Hero Section */}
       <HeroSection>
         <HeroContent>
-          <HeroTitle ref={heroTitleRef} style={{ '--animate-duration': '4s' }}>
+          <HeroTitle ref={heroTitleRef} style={{ '--animate-duration': '3s' }}>
             Our Integrated Solutions
           </HeroTitle>
-          <HeroSubtitle ref={heroSubtitleRef} style={{ '--animate-duration': '4s' }}>
+          <HeroSubtitle ref={heroSubtitleRef} style={{ '--animate-duration': '3s' }}>
             A comprehensive suite of mobility, energy, and digital platforms to power a cleaner Africa.
           </HeroSubtitle>
         </HeroContent>

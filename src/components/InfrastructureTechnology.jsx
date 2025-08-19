@@ -133,9 +133,9 @@ const InfrastructureTechnology = () => {
             entry.target.classList.add('animate__animated');
             // Apply different animations based on the element
             if (entry.target === card1Ref.current) {
-              entry.target.classList.add('animate__slideInRight');
+              entry.target.classList.add('animate__zoomIn');
             } else if (entry.target === card2Ref.current) {
-              entry.target.classList.add('animate__slideInLeft');
+              entry.target.classList.add('animate__zoomIn');
             } else if (entry.target === quoteRef.current) {
               entry.target.classList.add('animate__zoomIn');
             }
@@ -176,12 +176,12 @@ const InfrastructureTechnology = () => {
     <InfrastructureContainer>
       
 
-         <CTATitle style={{ '--animate-duration': '4s' }}>
+         <CTATitle style={{ '--animate-duration': '3s' }}>
            Infrastructure & Technology
         </CTATitle>
       <ContentGrid>
         {/* Pan-African Mobility Network Section */}
-        <SectionCard ref={card1Ref} style={{ '--animate-duration': '4s' }}>
+        <SectionCard ref={card1Ref} style={{ '--animate-duration': '3s' }}>
           <SectionTitle>
             <FaGlobeAfrica /> Pan-African Mobility Network
           </SectionTitle>
@@ -193,7 +193,7 @@ const InfrastructureTechnology = () => {
         </SectionCard>
 
         {/* Innovation Highlights Section */}
-        <SectionCard ref={card2Ref} style={{ '--animate-duration': '4s' }}>
+        <SectionCard ref={card2Ref} style={{ '--animate-duration': '3s' }}>
           <SectionTitle>
             <FaLightbulb /> Innovation Highlights
           </SectionTitle>
@@ -206,7 +206,7 @@ const InfrastructureTechnology = () => {
       </ContentGrid>
 
       {/* Quote Section */}
-      <QuoteSection ref={quoteRef} style={{ '--animate-duration': '4s' }}>
+      <QuoteSection ref={quoteRef} style={{ '--animate-duration': '3s' }}>
         <QuoteText>
           <FaQuoteRight />
           "Innovation without implementation is merely imagination."

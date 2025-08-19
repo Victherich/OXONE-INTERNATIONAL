@@ -71,7 +71,7 @@ const HeroSubtitle = styled.p`
 
 // --- Content Sections ---
 const Section = styled.section`
-  padding: 6rem 2rem;
+  padding: 1rem 2rem;
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
@@ -183,7 +183,7 @@ const AboutUsPage = () => {
             entry.target.classList.add('animate__animated');
             // Applying specific animations to different elements
             if (entry.target === heroTitleRef.current || entry.target === heroSubtitleRef.current) {
-                entry.target.classList.add('animate__rotateIn');
+                entry.target.classList.add('animate__zoomInDown');
             } else if (entry.target === storyTitleRef.current) {
                 entry.target.classList.add('animate__rotateIn');
             } else if (entry.target === storyTextRef.current) {
@@ -197,7 +197,7 @@ const AboutUsPage = () => {
             }
           } else {
             // Remove animation classes when out of view
-            entry.target.classList.remove('animate__animated', 'animate__fadeInDown', 'animate__zoomIn', 'animate__fadeInUp', 'animate__fadeIn', 'animate__rotateIn');
+            entry.target.classList.remove('animate__animated', 'animate__fadeInDown', 'animate__zoomIn', 'animate__fadeInUp', 'animate__fadeIn', 'animate__rotateIn',  'animate__zoomInDown');
           }
         });
       },
@@ -218,10 +218,10 @@ const AboutUsPage = () => {
       {/* Hero Section */}
       <HeroSection>
         <HeroContent>
-          <HeroTitle ref={heroTitleRef} style={{ '--animate-duration': '4s' }}>
+          <HeroTitle ref={heroTitleRef} style={{ '--animate-duration': '3s' }}>
             About OXONE INTERNATIONAL LTD
           </HeroTitle>
-          <HeroSubtitle ref={heroSubtitleRef} style={{ '--animate-duration': '4s' }}>
+          <HeroSubtitle ref={heroSubtitleRef} style={{ '--animate-duration': '3s' }}>
             Driving Africa’s future through clean mobility and energy solutions.
           </HeroSubtitle>
         </HeroContent>
@@ -229,10 +229,10 @@ const AboutUsPage = () => {
 
       {/* Our Story Section */}
       <Section>
-        <SectionTitle ref={storyTitleRef} style={{ '--animate-duration': '4s' }}>
+        <SectionTitle ref={storyTitleRef} style={{ '--animate-duration': '3s' }}>
           Our Story
         </SectionTitle>
-        <SectionText ref={storyTextRef} style={{ '--animate-duration': '4s' }}>
+        <SectionText ref={storyTextRef} style={{ '--animate-duration': '3s' }}>
           OXONE INTERNATIONAL LTD was founded to transform Africa’s mobility and energy ecosystem. By combining cutting-edge technology, industrial capacity, and strategic partnerships, we provide integrated solutions across vehicles, charging infrastructure, renewable energy, and energy-saving appliances.
         </SectionText>
       </Section>
@@ -242,17 +242,17 @@ const AboutUsPage = () => {
         <ColumnsContainer>
           {/* Vision and Mission Column */}
           <Column>
-            <SectionTitle ref={visionTitleRef} style={{ '--animate-duration': '4s' }}>
+            <SectionTitle ref={visionTitleRef} style={{ '--animate-duration': '3s' }}>
               Our Vision
             </SectionTitle>
-            <SectionText ref={visionTextRef} style={{ '--animate-duration': '4s' }}>
+            <SectionText ref={visionTextRef} style={{ '--animate-duration': '3s' }}>
               “To become Africa’s most trusted and technologically advanced provider of mobility, energy, and industrial solutions.”
             </SectionText>
 
-            <ListTitle ref={missionTitleRef} style={{ '--animate-duration': '4s' }}>
+            <ListTitle ref={missionTitleRef} style={{ '--animate-duration': '3s' }}>
               Our Mission
             </ListTitle>
-            <div ref={missionListRef} style={{ '--animate-duration': '4s' }}>
+            <div ref={missionListRef} style={{ '--animate-duration': '3s' }}>
               <ListItem>Deliver innovative EV, CNG, and hydrogen vehicles across Africa.</ListItem>
               <ListItem>Deploy renewable energy-powered charging and refueling stations.</ListItem>
               <ListItem>Advance long-range battery technologies and mobile/emergency charging solutions.</ListItem>
@@ -262,10 +262,10 @@ const AboutUsPage = () => {
 
           {/* Core Values Column */}
           <Column>
-            <ListTitle ref={valuesTitleRef} style={{ '--animate-duration': '4s' }}>
+            <ListTitle ref={valuesTitleRef} style={{ '--animate-duration': '3s' }}>
               Core Values
             </ListTitle>
-            <div ref={valuesListRef} style={{ '--animate-duration': '4s' }}>
+            <div ref={valuesListRef} style={{ '--animate-duration': '3s' }}>
               <ListItem><b>Innovation:</b> Advancing technology to meet Africa’s energy and mobility needs.</ListItem>
               <ListItem><b>Sustainability:</b> Embedding ESG principles in every operation.</ListItem>
               <ListItem><b>Reliability:</b> Ensuring uninterrupted mobility and energy solutions.</ListItem>
@@ -280,10 +280,10 @@ const AboutUsPage = () => {
 
       {/* Quote from CEO Section */}
       <QuoteSection>
-        <QuoteText ref={quoteTextRef} style={{ '--animate-duration': '4s' }}>
+        <QuoteText ref={quoteTextRef} style={{ '--animate-duration': '3s' }}>
           "Our mission is not just to provide vehicles or energy — it is to transform Africa’s mobility and energy landscape."
         </QuoteText>
-        <QuoteAuthor ref={quoteAuthorRef} style={{ '--animate-duration': '4s' }}>
+        <QuoteAuthor ref={quoteAuthorRef} style={{ '--animate-duration': '3s' }}>
           — CEO, OXONE INTERNATIONAL LTD
         </QuoteAuthor>
       </QuoteSection>

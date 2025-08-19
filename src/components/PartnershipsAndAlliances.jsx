@@ -116,16 +116,16 @@ const PartnershipsAndAlliances = () => {
           if (entry.isIntersecting) {
             entry.target.classList.add('animate__animated');
             if (entry.target === leftColumnRef.current) {
-              entry.target.classList.add('animate__slideInRight');
+              entry.target.classList.add('animate__zoomIn');
             } else if (entry.target === imageColumnRef.current) {
               entry.target.classList.add('animate__rotateIn');
             } else if (entry.target === rightColumnRef.current) {
-              entry.target.classList.add('animate__slideInLeft');
+              entry.target.classList.add('animate__zoomIn');
             } else if (entry.target === quoteRef.current) {
-              entry.target.classList.add('animate__slideInRight');
+              entry.target.classList.add('animate__zoomIn');
             }
           } else {
-            entry.target.classList.remove('animate__animated', 'animate__zoomInLeft', 'animate__zoomIn', 'animate__zoomInRight', 'animate__zoomInUp','animate__slideInLeft', 'animate__slideInRight','animate__rotateIn' );
+            entry.target.classList.remove('animate__animated', 'animate__zoomInLeft', 'animate__zoomIn', 'animate__zoomInRight', 'animate__zoomInUp','animate__slideInLeft', 'animate__slideInRight','animate__rotateIn', 'animate__zoomIn' );
           }
         });
       },

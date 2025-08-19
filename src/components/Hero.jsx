@@ -183,7 +183,7 @@
 //         <HeroSubtitle
 //           ref={heroSubtitleRef}
 //           className="animate__animated"
-//           style={{ animationDelay: '0.4s', '--animate-duration': '5s' }}
+//           style={{ animationDelay: '0.3s', '--animate-duration': '5s' }}
 //         >
 //           Explore breathtaking destinations and create unforgettable memories with our
 //           exclusive travel and tour packages.

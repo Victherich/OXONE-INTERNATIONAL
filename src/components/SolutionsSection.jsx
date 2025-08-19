@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import styled from 'styled-components';
 import 'animate.css';
+import { useNavigate } from 'react-router-dom';
 
 // This is the main container for the entire solutions section.
 const SolutionsContainer = styled.section`
@@ -97,6 +98,7 @@ const CardButton = styled.a`
   font-weight: 600;
   border-radius: 50px;
   transition: background-color 0.3s ease-in-out;
+  cursor:pointer;
 
   &:hover {
     background-color: #e64a19;
@@ -105,6 +107,9 @@ const CardButton = styled.a`
 
 // The main SolutionsSection component.
 const SolutionsSection = () => {
+const n = useNavigate();
+
+
   // Refs for the elements we want to animate.
   const sectionTitleRef = useRef(null);
   const sectionSubtitleRef = useRef(null);
@@ -202,7 +207,7 @@ const SolutionsSection = () => {
             <CardText ref={card1TextRef} style={{ '--animate-duration': '5s' }}>
               Discover our comprehensive range of electric, CNG, and hydrogen-powered mobility solutions. From personal vehicles to public transport fleets, we provide sustainable options that reduce emissions and power Africa’s clean future.
             </CardText>
-            <CardButton ref={card1ButtonRef} style={{ '--animate-duration': '5s' }} href="#">Explore Solutions</CardButton>
+            <CardButton ref={card1ButtonRef} style={{ '--animate-duration': '5s' }} onClick={()=>n('/services')}>Explore Solutions</CardButton>
           </SolutionCard>
 
           {/* Card 2: Partner with Us */}
@@ -211,7 +216,7 @@ const SolutionsSection = () => {
             <CardText ref={card2TextRef} style={{ '--animate-duration': '5s' }}>
               Join us in our mission to transform Africa. We are seeking collaborations with government agencies, private companies, and communities to develop and implement clean energy projects and infrastructure across the continent.
             </CardText>
-            <CardButton ref={card2ButtonRef} style={{ '--animate-duration': '5s' }} href="#">Partner with Us</CardButton>
+            <CardButton ref={card2ButtonRef} style={{ '--animate-duration': '5s' }} onClick={()=>n('/contactus')}>Partner with Us</CardButton>
           </SolutionCard>
 
           {/* Card 3: Invest in Africa’s Clean Mobility */}
@@ -220,7 +225,7 @@ const SolutionsSection = () => {
             <CardText ref={card3TextRef} style={{ '--animate-duration': '5s' }}>
               Be a part of Africa’s energy revolution. Your investment in our renewable energy infrastructure and advanced energy storage technologies will help drive economic growth and create a more sustainable and prosperous future for all.
             </CardText>
-            <CardButton ref={card3ButtonRef} style={{ '--animate-duration': '5s' }} href="#">Invest in Africa’s Clean Mobility</CardButton>
+            <CardButton ref={card3ButtonRef} style={{ '--animate-duration': '5s' }} onClick={()=>n('/contactus')}>Invest in Africa’s Clean Mobility</CardButton>
           </SolutionCard>
         </CardsContainer>
       </ContentWrapper>

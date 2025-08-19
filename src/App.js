@@ -13,6 +13,8 @@ import ESGCommitment from './components/ESGCommitment';
 import CareersInvestor from './components/CareersInvestor';
 import ScrollToTop from './components/ScrollToTop';
 import AppUpdate from './components/AppUpdate';
+import NewsroomPage from './components/NewsroomPage';
+import ScrollToTopButton from './components/ScrollToTopButton';
 
 
 function App() {
@@ -26,11 +28,13 @@ function App() {
     <Route path='/aboutus' element={<AboutUsPage/>}/>
     <Route path='/services' element={<Services/>}/>
     <Route path='/contactus' element={<ContactUsPage/>}/>
+    <Route path='/newsroom' element={<NewsroomPage/>}/>
     </Routes>
     <InfrastructureTechnology/>
     <PartnershipsAndAlliances/>
     <ESGCommitment/>
     <CareersInvestor/>
+    <ScrollToTopButton/>
    <Footer/>
    </BrowserRouter>
   );

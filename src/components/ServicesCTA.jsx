@@ -116,15 +116,15 @@ const ServicesCTA = () => {
           ref={ctaImageRef} 
           src="https://placehold.co/600x400/2B2B45/fff?text=Our+Solutions" 
           alt="A stylized visual of our solutions"
-          style={{ '--animate-duration': '4s' }} 
+          style={{ '--animate-duration': '3s' }} 
         /> */}
-        <CTATitle ref={ctaTitleRef} style={{ '--animate-duration': '4s' }}>
+        <CTATitle ref={ctaTitleRef} style={{ '--animate-duration': '3s' }}>
           Explore Our Cutting-Edge Solutions
         </CTATitle>
-        <CTAText ref={ctaTextRef} style={{ '--animate-duration': '4s' }}>
+        <CTAText ref={ctaTextRef} style={{ '--animate-duration': '3s' }}>
           From electric vehicles to renewable energy infrastructure, discover how we're powering a sustainable future for Africa.
         </CTAText>
-        <CTAButton ref={ctaButtonRef} style={{ '--animate-duration': '4s' }} href="/services">
+        <CTAButton ref={ctaButtonRef} style={{ '--animate-duration': '3s' }} href="/services">
           View Our Services
         </CTAButton>
       </ContentWrapper>

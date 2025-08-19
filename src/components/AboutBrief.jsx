@@ -102,13 +102,13 @@ const BriefAbout = () => {
             entry.target.classList.add('animate__animated');
             // Apply different animations
             if (entry.target === imageRef.current) {
-              entry.target.classList.add('animate__slideInRight');
+              entry.target.classList.add('animate__zoomIn');
             } else if (entry.target === textContentRef.current) {
-              entry.target.classList.add('animate__slideInLeft');
+              entry.target.classList.add('animate__zoomIn');
             }
           } else {
             // Remove animation classes when out of view
-            entry.target.classList.remove('animate__animated', 'animate__fadeInLeft', 'animate__fadeInRight', 'animate__zoomInLeft', 'animate__zoomInRight', 'animate__slideInRight', 'animate__slideInLeft');
+            entry.target.classList.remove('animate__animated', 'animate__fadeInLeft', 'animate__fadeInRight', 'animate__zoomInLeft', 'animate__zoomInRight', 'animate__slideInRight', 'animate__slideInLeft',  'animate__zoomIn');
           }
         });
       },
@@ -127,10 +127,10 @@ const BriefAbout = () => {
   return (
     <BriefAboutContainer>
       <ContentGrid>
-        <ImageContainer ref={imageRef} style={{ '--animate-duration': '4s' }}>
+        <ImageContainer ref={imageRef} style={{ '--animate-duration': '3s' }}>
           <img src={p13} alt="Our team at OXONE INTERNATIONAL LTD" />
         </ImageContainer>
-        <TextContent ref={textContentRef} style={{ '--animate-duration': '4s' }}>
+        <TextContent ref={textContentRef} style={{ '--animate-duration': '3s' }}>
           <AboutTitle>
             Who We Are
           </AboutTitle>

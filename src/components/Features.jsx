@@ -132,13 +132,13 @@ const Features = () => {
             if (entry.target === sectionTitleRef.current) {
               entry.target.classList.add('animate__zoomIn');
             } else if (entry.target === evsImageRef.current || entry.target === servicesImageRef.current) {
-              entry.target.classList.add('animate__fadeInLeft');
+              entry.target.classList.add('animate__zoomIn');
             } else if (entry.target === evsTextRef.current || entry.target === servicesTextRef.current) {
-              entry.target.classList.add('animate__fadeInRight');
+              entry.target.classList.add('animate__zoomIn');
             } else if (entry.target === stationsImageRef.current) {
-              entry.target.classList.add('animate__fadeInRight');
+              entry.target.classList.add('animate__zoomIn');
             } else if (entry.target === stationsTextRef.current) {
-              entry.target.classList.add('animate__fadeInLeft');
+              entry.target.classList.add('animate__zoomIn');
             }
           } else {
             // Remove animation classes when out of view.

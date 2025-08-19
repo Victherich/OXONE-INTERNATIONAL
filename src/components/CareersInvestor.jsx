@@ -128,9 +128,9 @@ const CareersInvestor = () => {
             entry.target.classList.add('animate__animated');
             // Apply different animations based on the element
             if (entry.target === careersRef.current) {
-              entry.target.classList.add('animate__slideInRight');
+              entry.target.classList.add('animate__zoomIn');
             } else if (entry.target === investorRef.current) {
-              entry.target.classList.add('animate__slideInLeft');
+              entry.target.classList.add('animate__zoomIn');
             } else if (entry.target === quoteRef.current) {
               entry.target.classList.add('animate__zoomIn');
             }
@@ -170,7 +170,7 @@ const CareersInvestor = () => {
     <CareersInvestorContainer>
       <ContentGrid>
         {/* Careers Section */}
-        <SectionBlock ref={careersRef} style={{ '--animate-duration': '4s' }}>
+        <SectionBlock ref={careersRef} style={{ '--animate-duration': '3s' }}>
           <SectionTitle>
             <FaBriefcase /> Careers
           </SectionTitle>
@@ -182,7 +182,7 @@ const CareersInvestor = () => {
         </SectionBlock>
 
         {/* Investor Relations Section */}
-        <SectionBlock ref={investorRef} style={{ '--animate-duration': '4s' }}>
+        <SectionBlock ref={investorRef} style={{ '--animate-duration': '3s' }}>
           <SectionTitle>
             <FaChartLine /> Investor Relations
           </SectionTitle>
@@ -195,7 +195,7 @@ const CareersInvestor = () => {
       </ContentGrid>
 
       {/* Quote Section */}
-      <QuoteSection ref={quoteRef} style={{ '--animate-duration': '4s' }}>
+      <QuoteSection ref={quoteRef} style={{ '--animate-duration': '3s' }}>
         <QuoteText>
           <FaQuoteRight />
           "Sustainability is not an option; it is the foundation of our legacy."

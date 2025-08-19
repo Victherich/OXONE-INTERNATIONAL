@@ -200,13 +200,13 @@ const ContactUsPage = () => {
             if (entry.target === heroTitleRef.current || entry.target === heroSubtitleRef.current) {
                 entry.target.classList.add('animate__rotateIn');
             } else if (entry.target === contactInfoRef.current) {
-                entry.target.classList.add('animate__zoomInLeft');
+                entry.target.classList.add('animate__zoomIn');
             } else if (entry.target === contactFormRef.current) {
-                entry.target.classList.add('animate__zoomInRight');
+                entry.target.classList.add('animate__zoomIn');
             }
           } else {
             // Remove animation classes when out of view
-            entry.target.classList.remove('animate__animated', 'animate__fadeInDown', 'animate__fadeInLeft', 'animate__fadeInRight', 'animate__rotateIn', 'animate__zoomInLeft', 'animate__zoomInRight');
+            entry.target.classList.remove('animate__animated', 'animate__fadeInDown', 'animate__fadeInLeft', 'animate__fadeInRight', 'animate__rotateIn', 'animate__zoomIn', 'animate__zoomInRight');
           }
         });
       },
@@ -233,10 +233,10 @@ const ContactUsPage = () => {
       {/* Hero Section */}
       <HeroSection>
         <HeroContent>
-          <HeroTitle ref={heroTitleRef} style={{ '--animate-duration': '4s' }}>
+          <HeroTitle ref={heroTitleRef} style={{ '--animate-duration': '3s' }}>
             Get In Touch
           </HeroTitle>
-          <HeroSubtitle ref={heroSubtitleRef} style={{ '--animate-duration': '4s' }}>
+          <HeroSubtitle ref={heroSubtitleRef} style={{ '--animate-duration': '3s' }}>
             We're here to answer your questions and help you with your mobility and energy needs.
           </HeroSubtitle>
         </HeroContent>
@@ -245,7 +245,7 @@ const ContactUsPage = () => {
       {/* Main Content Grid */}
       <ContactGridSection>
         {/* Contact Information Column */}
-        <ContactInfoColumn ref={contactInfoRef} style={{ '--animate-duration': '4s' }}>
+        <ContactInfoColumn ref={contactInfoRef} style={{ '--animate-duration': '3s' }}>
           <ContactInfoTitle>Our Details</ContactInfoTitle>
           <ContactInfoItem>
             <FaEnvelope />
@@ -292,8 +292,8 @@ const ContactUsPage = () => {
         </ContactInfoColumn>
 
         {/* Contact Form Column */}
-        <ContactFormColumn ref={contactFormRef} style={{ '--animate-duration': '4s' }}>
-          <FormTitle>Send Us a Message</FormTitle>
+        <ContactFormColumn ref={contactFormRef} style={{ '--animate-duration': '3s' }}>
+          <FormTitle style={{textAlign:"center"}}>Send Us a Message</FormTitle>
           <ContactForm onSubmit={handleSubmit}>
             <FormInput type="text" placeholder="Your Name" required />
             <FormInput type="email" placeholder="Your Email" required />

@@ -135,9 +135,9 @@ const ESGCommitment = () => {
             entry.target.classList.add('animate__animated');
             // Apply different animations based on the element
             if (entry.target === envRef.current) {
-              entry.target.classList.add('animate__slideInRight');
+              entry.target.classList.add('animate__zoomIn');
             } else if (entry.target === socialRef.current) {
-              entry.target.classList.add('animate__slideInLeft');
+              entry.target.classList.add('animate__zoomIn');
             } else if (entry.target === govRef.current) {
               entry.target.classList.add('animate__zoomIn');
             } else if (entry.target === quoteRef.current) {
@@ -183,7 +183,7 @@ const ESGCommitment = () => {
         </CTATitle>
       <ContentGrid>
         {/* Environmental Section */}
-        <SectionCard ref={envRef} style={{ '--animate-duration': '4s' }}>
+        <SectionCard ref={envRef} style={{ '--animate-duration': '3s' }}>
           <SectionTitle>
             <FaLeaf /> Environmental
           </SectionTitle>
@@ -195,7 +195,7 @@ const ESGCommitment = () => {
         </SectionCard>
 
         {/* Social Section */}
-        <SectionCard ref={socialRef} style={{ '--animate-duration': '4s' }}>
+        <SectionCard ref={socialRef} style={{ '--animate-duration': '3s' }}>
           <SectionTitle>
             <FaUsers /> Social
           </SectionTitle>
@@ -207,7 +207,7 @@ const ESGCommitment = () => {
         </SectionCard>
         
         {/* Governance Section */}
-        <SectionCard ref={govRef} style={{ '--animate-duration': '4s' }}>
+        <SectionCard ref={govRef} style={{ '--animate-duration': '3s' }}>
           <SectionTitle>
             <FaBalanceScale /> Governance
           </SectionTitle>
@@ -220,7 +220,7 @@ const ESGCommitment = () => {
       </ContentGrid>
 
       {/* Quote Section */}
-      <QuoteSection ref={quoteRef} style={{ '--animate-duration': '4s' }}>
+      <QuoteSection ref={quoteRef} style={{ '--animate-duration': '3s' }}>
         <QuoteText>
           <FaQuoteRight />
           "Sustainability is not an option; it is the foundation of our legacy."
