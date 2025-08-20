@@ -9,7 +9,9 @@ import styled from 'styled-components';
 import { useNavigate, useLocation } from 'react-router-dom';
 import 'animate.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import logo from '../Images/logo.png'
+// import logo from '../Images/logo3.svg'
+import { ReactComponent as Logo3 } from '../Images/logo3.svg'; // The logo as a React component
+
 
 // --- Styled Components for the Header ---
 const HeaderContainer = styled.header`
@@ -26,17 +28,31 @@ const HeaderContainer = styled.header`
   color: #fff;
   background-color: transparent; /* stays transparent until you scroll */
   transition: background-color 0.3s ease;
+  background-color:rgba(255,255,255,0.7);
 `;
 
 
 const Logo = styled.div`
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  cursor:pointer;
+  width:50px;
 
   img {
     height: 40px;
-    margin-right: 10px;
+    // margin-right: 10px;
     border-radius: 5px;
+  }
+
+    // Target the SVG directly
+  svg {
+    height: 40px;
+    // margin-right: 10px;
+
+    // Change the color of the SVG paths
+    path {
+      fill: white; /* Set a new color that stands out */
+    }
   }
 `;
 
@@ -251,8 +267,9 @@ useEffect(() => {
     <HeaderContainer ref={headerRef}  style={{ backgroundColor: scrolled ? "rgba(0,0,0,0.85)" : "transparent" }}>
       <Logo ref={logoRef} id="logo" onClick={()=>navigate('/')}>
          {/* Placeholder for the logo image. Replace with your actual logo. */}
-         <img src={logo} alt="Logo" />
+         {/* <img src={logo} alt="Logo" /> */}
          {/* <span className="font-bold text-xl">OXONE INTERNATIONAL LTD</span> */}
+         <Logo3/>
       </Logo>
 
       {/* Main navigation for desktop */}
