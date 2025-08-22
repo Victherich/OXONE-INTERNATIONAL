@@ -133,7 +133,9 @@ const Footer = () => {
               <FaEnvelope /> info@oxoneglobal.com
             </li>
             <li>
-              <FaPhone /> 123456789
+              <FaPhone /> +1 832 916 0698, 
+              +234 815 646 5060
+
             </li>
           </ul>
         </FooterSection>

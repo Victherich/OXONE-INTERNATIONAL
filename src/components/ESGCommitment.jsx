@@ -10,7 +10,7 @@ const ESGContainer = styled.section`
   background-color: #f8f8f8; // Light gray background
   color: #333; // Dark text color
   font-family: 'Inter', sans-serif;
-  padding: 6rem 2rem;
+  padding: 6rem 1rem;
   overflow: hidden;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 `;
@@ -26,6 +26,10 @@ const ContentGrid = styled.div`
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
   }
+
+   @media (max-width: 360px) {
+  gap:1rem;
+  }
 `;
 
 const SectionCard = styled.div`
@@ -39,6 +43,12 @@ const SectionCard = styled.div`
     transform: translateY(-5px);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
   }
+
+ @media (max-width: 360px) {
+  padding:1rem;
+  }
+
+
 `;
 
 const SectionTitle = styled.h3`

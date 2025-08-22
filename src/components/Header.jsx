@@ -36,7 +36,7 @@ const Logo = styled.div`
   display: flex;
   align-items: flex-start;
   cursor:pointer;
-  width:50px;
+  width:120px;
 
   img {
     height: 40px;
@@ -47,7 +47,8 @@ const Logo = styled.div`
     // Target the SVG directly
   svg {
     height: 40px;
-    // margin-right: 10px;
+    margin-right: -120px;
+    margin-left:-150px;
 
     // Change the color of the SVG paths
     path {
@@ -268,8 +269,9 @@ useEffect(() => {
       <Logo ref={logoRef} id="logo" onClick={()=>navigate('/')}>
          {/* Placeholder for the logo image. Replace with your actual logo. */}
          {/* <img src={logo} alt="Logo" /> */}
-         {/* <span className="font-bold text-xl">OXONE INTERNATIONAL LTD</span> */}
-         <Logo3/>
+           <Logo3/>
+         <span style={{fontWeight:"bold", fontSize:"0.7rem"}}>OXONE <br/> INTERNATIONAL<br/> LTD</span>
+       
       </Logo>
 
       {/* Main navigation for desktop */}
